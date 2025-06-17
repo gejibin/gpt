@@ -1,0 +1,29 @@
+[project]
+name = "gpt2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "gejibin",email = "gejb007@outlook.com"}
+]
+readme = "README.md"
+package-mode = true
+packages = [{ include = "tools, gpt2", from = "." }]
+
+requires-python = ">=3.12"
+dependencies = [
+    "tensorflow (>=2.19.0,<3.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "tiktoken (>=0.9.0,<0.10.0)",
+    "safetensors (>=0.5.3,<0.6.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "nltk (>=3.9.1,<4.0.0)",
+    "scikit-learn (>=1.7.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
